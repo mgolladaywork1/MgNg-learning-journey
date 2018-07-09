@@ -115,8 +115,6 @@ Angular Material has become easier to use in Angular 6.  Below are some importan
 - **Bottom-Sheet**: for mobile-specific modal interaction
 - **Schematics**:
 ```
-Example:
-$ ng g @angular/material:material-nav - - name=side-nav
   
 Example:
 $ ng new ngMaterialProj01
@@ -145,7 +143,7 @@ $ ng generate @angular/material:nav --name baseMatNav
 $ ng generate @angular/material:dashboard --name baseMatDashboard
 $ ng generate @angular/material:table -- name baseMatTable
 ```
->To findout which item you can generate through @angular/material, check it out under node_modules folder, @angular, material, schematics  
+>To findout which item you can generate through @angular/material, check it out under node_modules folder, @angular, material, schematics.  You will see 'nav' folder, 'dashboard' folder, 'table' folder, etc...  
 (there are rapit changes in the schematics section, make sure the names are correct, please. )
 
 To add to your component’s html:

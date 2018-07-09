@@ -120,23 +120,33 @@ $ ng g @angular/material:material-nav - - name=side-nav
   
 Example:
 $ ng new ngMaterialProj01
-$ ng add @angular/material
+**Note** in May 2018, we can add material this way after cd to the project.
+$ ng add @angular/material  
+
+But as of mid June and early July 2018.  We have to use npm or yarn to add material and cdk
+
+**To use NPM **  
+$ npm install --save @angular/material @angular/cdk  
+**To use NPM **  
+$ yarn add @angular/material @angular/cdk  
 ```
 We can quickly select some starter components that fit our need.  Such as:
 
 
-_@angular/material:materialDashboard_: Create a card-based dashboard component  
+_@angular/material:dashboard_: Create a card-based dashboard component  
 
-_@angular/material:materialTable_: Create a component that displays data with a data-table 
+_@angular/material:table_: Create a component that displays data with a data-table 
 
-_@angular/material:materialNav_: Create a component with a responsive sidenav for navigation
+_@angular/material:nav_: Create a component with a responsive sidenav for navigation
 
 To use **ng generate** command to generate the starter component:
 ```
-$ ng generate @angular/material:materialNav --name baseMatNav
-$ ng generate @angular/material:materialDashboard --name baseMatDashboard
-$ ng generate @angular/material:materialTable -- name baseMatTable
+$ ng generate @angular/material:nav --name baseMatNav
+$ ng generate @angular/material:dashboard --name baseMatDashboard
+$ ng generate @angular/material:table -- name baseMatTable
 ```
+>To findout which item you can generate through @angular/material, check it out under node_modules folder, @angular, material, schematics  
+(there are rapit changes in the schematics section, make sure the names are correct, please. )
 
 To add to your component’s html:
 add:
